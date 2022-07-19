@@ -52,7 +52,7 @@ img {
 
 .nav-item {
     flex: 1 0 50%; /* Grows at a rate of 1 / 50% creates two column for my links */
-    text-align: center;
+    text-align: center; /* Centers text horizontally */
 }
 
 .name a,
@@ -85,12 +85,52 @@ img {
 }
 
 .banner {
-    text-align: center;
+    text-align: center; /* Centers text horizontally */
     background-color: #fff;
 }
 
 h2 {
     display: inline-block;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Centers text horizontally */
+    justify-content: center; /* Centers content horizontally */
+}
+
+
+.section-titles {
+    text-align: center; 
+}
+
+.section-titles:after {
+    content: "";
+    display: block; /* Displays as a block element */
+    margin: 0 auto;
+    width: 90%; /* Underline runs alone 90% of screen */
+    padding: 10px; 
+    border-bottom: 1px solid black; /* Underline */
+}
+
+@media (min-width: 600px) { /* Media Query for Table */
+    .header-nav {
+        line-height: 1.5rem;
+    }
+    .nav-menu {
+        width: 100%
+    }
+    .nav-item {
+        flex: 1 0 10%;
+    }
+}
+
+@media (min-width: 900px) {
+    .header-nav {
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 1rem auto;
+    }
+    .nav-menu {
+        width: auto;
+    }
+    .name { 
+        margin: 0 0 0 0.3rem; 
+    }
 }
