@@ -69,3 +69,28 @@ img {
     margin: 0 auto; /* 0 removes browser given margin & auto keeps the name centered */
 }
 
+.nav-menu a {
+    color: blue; /* Declares color of links */
+    transition: all ease-in-out 0.5s; /* ease-in-out animation on links / 0.5s fast */
+}
+
+.nav-menu a:hover { /* Declares all properties while links are being hovered */
+    background-color: green;
+    transform: scale(1.1); /*  While being hovered, links slighty increase in size*/
+
+}
+
+.nav-menu a:active { /* Declares all properties while links are active (Clicked on) */
+    transform: scale(0.9); /* While clicking on the link, it slightly decreases in size */
+}
+
+.banner {
+    text-align: center;
+    background-color: #fff;
+}
+
+h2 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
