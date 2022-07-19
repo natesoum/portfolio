@@ -1,0 +1,19 @@
+html { /* Only selects html elements */
+    font-size: 100%;
+    line-height: 1.5rem; /* rem short for root em is a unit of measurement that represents the font size of the root element. */
+    box-sizing: border-box; /* padding/border are included in the width/height */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto; /* 0 margin for top/bottom then left/right are automatically set by the browser */
+    padding: 0; /* 0 for margin/padding eliminates any excess border/padding that the browser gives by default & also leaves for consistent styling across all web browser */
+    min-height: 100vh; 
+    max-width: 1400px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* inherits the box sizing of the parent elements */
+}
