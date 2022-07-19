@@ -1,7 +1,7 @@
 html { /* Only selects html elements */
     font-size: 100%;
-    line-height: 1.5rem; /* rem short for root em is a unit of measurement that represents the font size of the root element. */
-    box-sizing: border-box; /* padding/border are included in the width/height */
+    line-height: 1.5rem; /* Rem short for "root em" is a unit of measurement that represents the font size of the root element. */
+    box-sizing: border-box; /* Padding/border are included in the width/height */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,7 +15,7 @@ body {
 *,
 *::before,
 *::after {
-    box-sizing: inherit; /* inherits the box sizing of the parent elements */
+    box-sizing: inherit; /* Inherits the box sizing of the parent elements */
 }
 
 img {
@@ -27,41 +27,45 @@ img {
 .header-nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* centers class horizontally */
-    align-items: center; /* centers class vertically */
-    line-height: 1rem; 
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    line-height: 1rem;
     overflow: hidden;
     margin-bottom: 0.5rem;
-    background-color: #39ba96;
+    background-color: cornflowerblue;
+    } 
+
+.name,
+.nav-menu {
+    text-transform: uppercase; /* Turns all letters into uppercase */
 }
 
-.name, 
 .nav-menu {
-    text-transform: uppercase; /* turns all letters into uppercase */
-}
-
-.nav-menu {
-    list-style: none; /* removes any list style */
+    list-style: none; /* Removes any list style */
     display: flex;
-    justify-content: space-evenly; /* evenly spaced between links / nothing happened yet due to no flex basis */
-    align-items: center; /* centers elements vertically */
-    padding: 0; /* 0 here to get rid of padding */
-    margin: 0; 
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Evenly spaced between links / did not work alone, need to declare flex basis for items */
+    align-items: center; /* Centers vertically */
+    padding: 0; /* Gets rid of browser given padding */
+    margin: 0; /* Got rid of margin for styling preference */
 }
 
 .nav-item {
-    flex: 1 0 50%; /* 50% here creates two columns for my nav */
-    text-align: center; 
+    flex: 1 0 50%; /* Grows at a rate of 1 / 50% creates two column for my links */
+    text-align: center;
 }
 
 .name a,
 .nav-menu a {
-    display: blocks; /* links are inline elements so we declare them as blocks here */
-    text-decoration: none; /* removes underline from a element */
-    letter-spacing: 0.2rem; /* personal style preference */
-    padding: 0.8rem; /* added padding to add space between links */
+    display: block; /* Links are inline elements, here we declare them as blocks */
+    text-decoration: none; /* Removes the underline decorating from links */
+    letter-spacing: 0.2rem; /* Personal style preference */
+    padding: 0.8rem; /* Extra padding to add more space for links */
 }
 
 .name {
-    margin: 0 auto; /* 0 here removes browser given margin & auto to keep the name centered */
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 0 auto; /* 0 removes browser given margin & auto keeps the name centered */
 }
+
