@@ -17,3 +17,51 @@ body {
 *::after {
     box-sizing: inherit; /* inherits the box sizing of the parent elements */
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centers class horizontally */
+    align-items: center; /* centers class vertically */
+    line-height: 1rem; 
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    background-color: #39ba96;
+}
+
+.name, 
+.nav-menu {
+    text-transform: uppercase; /* turns all letters into uppercase */
+}
+
+.nav-menu {
+    list-style: none; /* removes any list style */
+    display: flex;
+    justify-content: space-evenly; /* evenly spaced between links / nothing happened yet due to no flex basis */
+    align-items: center; /* centers elements vertically */
+    padding: 0; /* 0 here to get rid of padding */
+    margin: 0; 
+}
+
+.nav-item {
+    flex: 1 0 50%; /* 50% here creates two columns for my nav */
+    text-align: center; 
+}
+
+.name a,
+.nav-menu a {
+    display: blocks; /* links are inline elements so we declare them as blocks here */
+    text-decoration: none; /* removes underline from a element */
+    letter-spacing: 0.2rem; /* personal style preference */
+    padding: 0.8rem; /* added padding to add space between links */
+}
+
+.name {
+    margin: 0 auto; /* 0 here removes browser given margin & auto to keep the name centered */
+}
