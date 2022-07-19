@@ -10,6 +10,7 @@ body {
     padding: 0; /* 0 for margin/padding eliminates any excess border/padding that the browser gives by default & also leaves for consistent styling across all web browser */
     min-height: 100vh; 
     max-width: 1400px;
+    background-color: #adc3d1;
 }
 
 *,
@@ -22,9 +23,10 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;         
-    object-position: 100% 0;  //move image position in x direction. 
-    object-position: 0 100%; //move image position in y direction.
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 .header-nav {
@@ -96,10 +98,6 @@ img {
     background-color: #adc3d1;
 }
 
-/* .sidebar {
-    display: none;
-} */
-
 main {
     width: 100%;
 }
@@ -121,7 +119,24 @@ h2 {
     margin: 0 auto;
     width: 90%; /* Underline runs alone 90% of screen */
     padding: 10px; 
-    border-bottom: 1px solid black; /* Underline */
+    border-bottom: 3px solid black; /* Underline */
+}
+
+p {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.img-text {
+    position: relative;
+}
+
+.img-text figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    background-color: blanchedalmond;
+    color: #000;
 }
 
 @media (min-width: 600px) { /* Media Query for Table */
