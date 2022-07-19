@@ -22,6 +22,9 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;         
+    object-position: 100% 0;  //move image position in x direction. 
+    object-position: 0 100%; //move image position in y direction.
 }
 
 .header-nav {
@@ -32,7 +35,7 @@ img {
     line-height: 1rem;
     overflow: hidden;
     margin-bottom: 0.5rem;
-    background-color: cornflowerblue;
+    background-color: #464646;
     } 
 
 .name,
@@ -69,8 +72,12 @@ img {
     margin: 0 auto; /* 0 removes browser given margin & auto keeps the name centered */
 }
 
+.name a {
+    color: #fff;
+}
+
 .nav-menu a {
-    color: blue; /* Declares color of links */
+    color: #fff; /* Declares color of links */
     transition: all ease-in-out 0.5s; /* ease-in-out animation on links / 0.5s fast */
 }
 
@@ -86,7 +93,15 @@ img {
 
 .banner {
     text-align: center; /* Centers text horizontally */
-    background-color: #fff;
+    background-color: #adc3d1;
+}
+
+/* .sidebar {
+    display: none;
+} */
+
+main {
+    width: 100%;
 }
 
 h2 {
