@@ -1,6 +1,9 @@
 # portfolio
 
 # Mock Up
+![alt text] (assets/images/mobile.jpg)
+![alt text] (assets/images/tablet.jpg)
+
 
 # Description
 What was your motivation?
