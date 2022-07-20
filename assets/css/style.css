@@ -19,16 +19,6 @@ body {
     box-sizing: inherit; /* Inherits the box sizing of the parent elements */
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    width: 90%;
-    height: 100px;
-    margin: 0 auto;
-    padding: 1px 0;
-}
-
 .header-nav {
     display: flex;
     flex-wrap: wrap;
@@ -143,8 +133,14 @@ p {
 
 .contact-list {
     list-style: none;
+    padding: 10px;
 }
 
+.contact-item {
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+}
 
 @media (min-width: 600px) { /* Media Query for Table */
     .header-nav {
@@ -165,7 +161,6 @@ p {
         justify-content: flex-start;
         align-items: flex-end;
     }
-}
 
 @media (min-width: 900px) {
     .header-nav {
@@ -178,5 +173,45 @@ p {
     }
     .name { 
         margin: 0 0 0 0.3rem; 
+    }
+    .section-titles {
+        border-bottom: 0;
+        border-right: 3px solid black;
+        display: flex;
+        float: left;
+    }
+
+    .section-titles:after {
+        border-bottom: 0;
+    }
+    #project-one {
+        display: block;
+        order: 1;
+    }
+    .img-text figcaption {
+        background-image: url(../images/placeholder.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 3px solid #000;
+        height: 100px;
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .contact-list {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-item {
+        margin: 10px;
+        padding: 10px;
+        color: #000;
+        text-transform: uppercase;
     }
 }
