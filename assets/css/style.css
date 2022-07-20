@@ -141,13 +141,6 @@ p {
     align-items: flex-end;
 }
 
-/* .img-text figcaption {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end;
-} */
-
 .contact-list {
     list-style: none;
 }
