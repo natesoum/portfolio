@@ -1,9 +1,9 @@
 # portfolio
 
 # Mock Up
-![alt text] (assets/images/mobile.jpg)
-![alt text] (assets/images/tablet.jpg)
 
+![alt text](https://github.com/natesoum/portfolio/blob/main/assets/images/mobile.jpg?raw=true)
+![alt text](https://github.com/natesoum/portfolio/blob/main/assets/images/tablet.jpg?raw=true)
 
 # Description
 What was your motivation?
