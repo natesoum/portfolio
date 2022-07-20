@@ -179,25 +179,37 @@ p {
         border-right: 3px solid black;
         display: flex;
         float: left;
+        padding: 0 0 0 20px;
     }
 
     .section-titles:after {
         border-bottom: 0;
     }
+    p {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    figcaption {
+        margin: 0 auto;
+    }
+    .img-text figure {
+        display: flex
+        flex-wrap: wrap;
+    }
     #project-one {
+        width: 100%;
         display: block;
-        order: 1;
     }
     .img-text figcaption {
-        background-image: url(../images/placeholder.jpg);
+        background-image: url(../images/space.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         border: 3px solid #000;
         height: 100px;
         width: 400px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        flex: 50%;
+        padding: 5%;
     }
     .contact-list {
         list-style: none;
